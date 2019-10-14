@@ -1,0 +1,32 @@
+Myriam AZZAZ - TP 00
+
+Exercice 1 :
+
+4) Version Maven : 3.6.0
+
+6) On y retrouve les classes, les classes générées et le statut maven.
+
+8) La classe path permet de définir le chemin au répertoire où se situent le 
+classes et packages Java, afin qu'ils soient exécutés.
+
+13) On lui donne la même valeur que le compiler.source, c'est à dire, 1.7
+
+
+Exercice 2 :
+1) Il est dit qu'il n'existe aucun attribut manifeste principal dans ce fichier
+
+Exercice 3 :
+
+3) sysout ctrl espace est un raccourci pour System.out.println();
+
+4) c'est un raccourci pour appeler la méthode toString
+
+5) c'est un raccourci pour appeler la méthode main(String[] args)
+
+7) c'est pour renommer la classe/variable (refactor)
+
+TD 00Bis
+
+Exercice 1:
+
+2) le fichier PrimeCollection.java
