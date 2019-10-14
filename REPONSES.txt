@@ -37,4 +37,11 @@ Exercice 1:
 
 Exercice 2:
 
-5)
+5) Les deux fichiers ont été fusionnés. 
+
+7) Je pense que l'import aurait été rejeté car la machine ne peut pas savoir quelle version est la bonne : il y a un conflit. 
+
+Exercice 3 : 
+
+2) Les tests ont été exécutés et aucune erreur ni fail ont été relevé. Les tests sont tous ok. 
+Lorsqu'on a modifié le paramètre de la méthode assertTrue de true à false, on est dans le rouge : notre test a échoué. En effet, la méthode assertTrue vérifie que ce qu'elle a en paramètre est toujours vrai. En mettant false en paramètre, c'est toujours faux : d'où l'échec. 
