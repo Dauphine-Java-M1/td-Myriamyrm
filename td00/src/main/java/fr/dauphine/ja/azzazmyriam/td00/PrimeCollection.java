@@ -60,7 +60,7 @@ public class PrimeCollection
     {
         System.out.println( "bonjour" );
         PrimeCollection pr = new PrimeCollection();
-        System.out.println(pr.initRandom(100, 1000));
+        System.out.println(pr.initRandom(100, 2000));
         pr.printPrimes();
         
     }
