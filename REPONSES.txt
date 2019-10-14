@@ -34,3 +34,7 @@ Exercice 1:
 5) la commande git diff va pointer là où l'on a modifié le code. ça compare le dernier commit avec les fichiers qui sont sur le répertoire. 
 
 8) Hash SHA-1 du premier import : 82c85bbb4afce76eab2d9aee75b868b8d087a111
+
+Exercice 2:
+
+5)
