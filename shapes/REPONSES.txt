@@ -1,0 +1,27 @@
+Myriam Azzaz - TD 01
+
+Exercice 1. Point.
+
+1) Les deux variables x et y ont été initialisé à 0. Cela fonctionne si l'on n'écrit pas de constructeurs, java crée un constructeur par défaut. 
+
+2) Le code ne s'exécute pas car les champs x et y sont privés, donc la classe TestPoint ne peut pas y accéder, elle n'en a pas les droits. Pour y rémedier, il faut modifier la visibilité, et changer private en public ou protected. On peut également créer un getter au sein de la classe Point, qu'on appelle dans TestPoint. 
+
+3) Les champs d'une classe doivent être privés afin de les protéger, et d'éviter les conflits, dans le contexte d'un partage de code par exemple. 
+
+4) Un accesseur est une méthode qui permet de récupérer la valeur d'une variable déclarée privée. Ici, il faut le faire afin de récupérer la valeur de x et y en dehors de la classe Point, puisqu'elles ont été déclarées privées. 
+
+5) Maintenant qu'on a créé un constructeur, le constructeur par défaut n'existe plus. Donc le code ne s'exécute plus car la méthode Point() n'existe pas. 
+
+6) Il faut modifier le this.px = x en this.x = x et pareil pour y. 
+
+7) On crée une méthode static ainsi qu'une variable static, qu'on incrémente à chaque fois qu'un objet est instancié. 
+
+8) Le compilateur sait quel constructeur appeler en fonction de ce qui est entré en paramètres. 
+
+Exercice 2. Egalité. 
+
+1) "true
+    false"
+p1 et p2 sont les mêmes points puisque p2 a été instancié à partir de p1. En revanche, bien que p3 ait les mêmes coordonées que p1, cela va renvoyé faux car la méthode equals n'a pas été créé. Le == va alors comparer les hashcode/références. celui de p1 et différent que celui de p3 donc ça renvoie false. 
+
+2)
