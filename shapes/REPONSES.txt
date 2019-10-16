@@ -18,10 +18,27 @@ Exercice 1. Point.
 
 8) Le compilateur sait quel constructeur appeler en fonction de ce qui est entré en paramètres. 
 
+
 Exercice 2. Egalité. 
 
 1) "true
     false"
 p1 et p2 sont les mêmes points puisque p2 a été instancié à partir de p1. En revanche, bien que p3 ait les mêmes coordonées que p1, cela va renvoyé faux car la méthode equals n'a pas été créé. Le == va alors comparer les hashcode/références. celui de p1 et différent que celui de p3 donc ça renvoie false. 
 
-2)
+3) La méthode indexOf() renvoie l'entier correspondant à la première occurence d'un objet dans une ArrayList. Seul le point p1 se trouve dans l'Arraylist. La méthode est appelée sur les points p2 et p3, et on a vu que ces deux points là avaient les mêmes coordonnées que le point p1 (ils sont donc les mêmes). Le problème réside dans le fait que la méthode indexOf() sur p3 renvoie -1 car p1 et p3, bien qu'ils sont égaux, n'ont pas la même référence, et sont donc différents aux yeux du compilateur. 
+Pour remédier à ce problème, on peut réécrire la méthode indexOf en utilisant la méthode isSameAs(Point). 
+
+
+
+Exercice 3. Ligne brisée.
+
+1)
+
+
+
+
+
+
+
+
+
