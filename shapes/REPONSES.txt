@@ -32,7 +32,15 @@ Pour remédier à ce problème, on peut réécrire la méthode indexOf en utilis
 
 Exercice 3. Ligne brisée.
 
-1)
+2) Si on dépasse la capacité fixée, on obtient une erreur de type java.lang.ArrayIndexOutOfBoundsException. Pour y remédier, plusieurs solutions s'offrent à nous. On peut écrire un constructeur qui prend en paramètre le nombre de point qui constituera la ligne brisée, et qui sera par conséquent la taille du tableau. Mais si l'utilisateur change d'avis et souhaite une ligne plus grande, cela posera problème. L'origine du problème réside dans la taille fixée du tableau. On peut alors subtituer le tableau pour une list, qui nous donne alors plus de liberté. 
+
+3) Si null est passé en argument de la méthode contains, alors il renverra true si le tableau n'est pas plein. Ça restre true si on ajoute null dans le tableau. 
+
+4) Ces méthodes n'ont alors plus d'utilité. 
+
+
+Exercice 4. Mutabilité et cercle. 
+
 
 
 
