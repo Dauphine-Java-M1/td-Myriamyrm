@@ -4,26 +4,33 @@ import java.util.LinkedList;
 
 public class LigneBrisee {
 
-	//LinkedList<Point> list;
-	Point[] list;
+	LinkedList<Point> list;
+	//Point[] list;
 	
 	LigneBrisee(){
-		//list = new LinkedList<Point>();
-		this.list = new Point[3];
+		list = new LinkedList<Point>();
+		//this.list = new Point[3];
 	}
 	
-	public void add(Point p){
-		int k = 0;
-		while(list[k] != null) {
-			k++;
-		}
-		list[k] = p;
-	}
+	// Méthode add quand la liste est un tableau
+		/*public void add(Point p){
+			int k = 0;
+			while(list[k] != null) {
+				k++;
+			}
+			list[k] = p;
+		}*/
 	
+	public void add(Point p) {
+		this.list.add(p);
+	}
+	/*
 	public int pointCapacity() {
 		return list.length;
 	}
+	*/
 	
+	/*
 	public int nbPoints() {
 		int k = 0;
 		while(list[k] != null) {
@@ -31,7 +38,9 @@ public class LigneBrisee {
 		}
 		return k;
 	}
+	*/
 	
+	/*
 	public boolean contains(Point p) {
 		for(Point o : list) {
 			if(o == p) {
@@ -40,10 +49,8 @@ public class LigneBrisee {
 		}
 		return false;
 	}
+	*/
 	
-	public Point[] getList()	{
-		return this.list;
-	}
 	
 	public static void main( String[] args ) {
 		LigneBrisee line = new LigneBrisee();
@@ -53,8 +60,8 @@ public class LigneBrisee {
 		line.add(p);
 		line.add(o);
 		//line.add(null);
-		System.out.println(line.nbPoints());
-		System.out.println(line.contains(null));
+		//System.out.println(line.nbPoints());
+		//System.out.println(line.contains(null));
 		
 	}
 }
