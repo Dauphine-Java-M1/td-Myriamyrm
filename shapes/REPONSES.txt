@@ -41,6 +41,8 @@ Exercice 3. Ligne brisée.
 
 Exercice 4. Mutabilité et cercle. 
 
+5) 
+
 
 
 
