@@ -41,7 +41,9 @@ Exercice 3. Ligne brisée.
 
 Exercice 4. Mutabilité et cercle. 
 
-5) 
+5) Le problème est que le cercle c et c2 ont le même centre p. Lorsque l'on translate c, cela va également translater le cercle c2 car leur centre partagent la même référence. Pour éviter ce problème, on modifie le constructeur du cercle, en créant un point unique dans l'attribution du cercle. 
+
+6) Renvoyer les coordonnées du centre du cercle n'est pas réellement le problème. Le problème est que lorsque l'on 
 
 
 
