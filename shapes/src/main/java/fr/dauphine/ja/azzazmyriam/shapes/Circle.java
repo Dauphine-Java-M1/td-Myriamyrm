@@ -18,6 +18,7 @@ public class Circle {
 		this.rayon = 0;
 	}
 	
+	@Override
 	public String toString() {
 		return "cercle de rayon : " + rayon + " et de centre : " + centre.toString() + 
 				". Sa surface est de : " + this.surface(); 
@@ -36,11 +37,9 @@ public class Circle {
 	}
 	
 	public boolean contains(Point p) {
-		if(Math.sqrt((p.getX() - this.centre.getX())*(p.getX() - this.centre.getX()) 
-				+ (p.getY() - this.centre.getY())*p.getY() - this.centre.getY()) <= this.rayon) {
-			return true;
-		}
-		return false;
+		int x = p.getX() - this.centre.getX();
+		int y = p.getY() - this.centre.getY();
+		return Math.sqrt(x*x + y*y) <= this.rayon; 
 	}
 	
 	public boolean contains(Point p, ArrayList<Circle> c) {
@@ -52,23 +51,34 @@ public class Circle {
 		return false;
 	}
 	
+	public int getRayon() {
+		return this.rayon;
+	}
 	
+	@Override
+	public boolean equals(Object o) {
+		if(! (o instanceof Circle)) {
+			return false;
+		}
+		Circle c = (Circle) o;
+		return this.centre.equals(c.getCenter()) && this.rayon == c.getRayon();
+	}
 	
 	
 	public static void main(String[] args) {
-		Point p = new Point(0,0);
-		Point p1 = new Point(0,1);
-		Circle c = new Circle(p,2);
+		Point p1 = new Point(0,0);
+		Circle c = new Circle(new Point(0,0),2);
 		
-		Circle c2 = new Circle(p,2);
-		c2.translate(1,1);	
-		
-		System.out.println(c + "\n" + c2);
-		System.out.println(c.surface());
-		
-		Circle c3 = new Circle(new Point(1,2), 1);
-		c.getCenter().translate(1,1);
+		Circle c2 = new Circle(new Point(0,0),2);
+//		c2.translate(1,1);	
+//		
+//		System.out.println(c + "\n" + c2);
+//		System.out.println(c.surface());
+//		
+//		Circle c3 = new Circle(new Point(1,2), 1);
+//		c.getCenter().translate(1,1);
 		System.out.println(c.contains(p1));
+		System.out.println(c2.equals(c));
 	}
 	
 }

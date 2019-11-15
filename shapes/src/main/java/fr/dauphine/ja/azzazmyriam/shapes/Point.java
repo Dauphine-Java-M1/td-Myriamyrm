@@ -41,11 +41,16 @@ public class Point
 	}
 	
 	boolean isSameAs(Point p) {
-		boolean i = false;
-		if(this.x == p.x & this.y == p.y) {
-			i = true;
+		return this.x == p.x & this.y == p.y;
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(!(o instanceof Point)) {
+			return false;
 		}
-		return i;
+		Point p = (Point) o;
+		return this.isSameAs(p);
 	}
 	
 	int indexOf(ArrayList<Point> list) {
@@ -73,7 +78,7 @@ public class Point
     {
 //        Point p1 = new Point();
           Point p2 = new Point(1,1);
-//        Point p3 = new Point(7,2);
+          Point p3 = new Point(1,1);
 //        Point p4 = p2;
 //        Point p5 = new Point();
 //        ArrayList<Point> list = new ArrayList<Point>();
@@ -86,7 +91,7 @@ public class Point
 //        System.out.println(p2);
 //        System.out.println(p2.isSameAs(p3));
 //        System.out.println(getNbPointcree());
-          p2.translate(1,-1);
-          System.out.println(p2);
+         // p2.translate(1,-1);
+          System.out.println(p3.equals(p2));
     }
 }

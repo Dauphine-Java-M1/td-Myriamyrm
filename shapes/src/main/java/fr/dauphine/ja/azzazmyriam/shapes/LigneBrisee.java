@@ -13,6 +13,7 @@ public class LigneBrisee {
 	}
 	
 	// Méthode add quand la liste est un tableau
+	
 		/*public void add(Point p){
 			int k = 0;
 			while(list[k] != null) {
@@ -24,6 +25,7 @@ public class LigneBrisee {
 	public void add(Point p) {
 		this.list.add(p);
 	}
+	
 	/*
 	public int pointCapacity() {
 		return list.length;
